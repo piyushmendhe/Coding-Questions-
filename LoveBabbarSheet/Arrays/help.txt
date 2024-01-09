@@ -1,0 +1,32 @@
+ArrayList
+
+//Importing
+import java.util.*;
+
+ // initial size n
+        ArrayList<Integer> arr1 = new ArrayList<Integer>(n);
+ 
+// Declaring the ArrayList
+        ArrayList<Integer> arr2 = new ArrayList<Integer>();
+
+// Appending new elements at
+// the end of the list
+ arr1.add(i);
+
+
+  // Adding specifying the index to be added
+        al.add(1, "Geeks");
+
+// Removing element from above ArrayList
+        al.remove(1);
+
+ // get method
+     Integer n= list.get(1);
+
+
+//Sorting
+ Collections.sort(list);
+
+//list size
+int b = list.size();
+
