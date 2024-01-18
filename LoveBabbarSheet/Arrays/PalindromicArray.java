@@ -1,4 +1,4 @@
-package LoveBabbarSheet.Arrays;
+// package LoveBabbarSheet.Arrays;
 
 public class PalindromicArray {
 
