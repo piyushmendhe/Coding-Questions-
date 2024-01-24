@@ -1,12 +1,12 @@
-public package LoveBabbarSheet.Arrays;
+//package LoveBabbarSheet.Arrays;
 
 class StiklerThief {
 
-  
-    //Function to find the maximum money the thief can get.
+  //top Down
+    
     public int FindMaxSum(int arr[], int n)
     {
-        // Your code here
+        
         int[] dp =new int[n];
         return maxSum(dp,arr,0);
     }
@@ -26,5 +26,26 @@ class StiklerThief {
             }
             return dp[curIndex];
         }
-    
+//bottom up 
+        public int bottomUp(int[] arr)
+        {
+            int[] dp = new int[arr.length +2];
+            dp[arr.length]=0;
+
+            for(int i=arr.length-1;i>=0;i--)
+            {
+                dp[i]=Math.max(arr[i]+dp[i+2],dp[i+1]);
+
+            }
+            return dp[0];
+        }
+        public static void main(String[] args) {
+            StiklerThief solution = new StiklerThief();
+             int[] arr = {6, 7, 1, 30, 8, 2, 4};
+             int n = arr.length;
+                     int result = solution.bottomUp(arr);
+                     int result2 = solution.FindMaxSum(arr, n);
+                     System.out.println("Maximum money the thief can get via top down: " + result2);
+                     System.out.println("Maximum money the thief can get via bottom up: " + result);
+         }
 }
