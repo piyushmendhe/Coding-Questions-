@@ -1,4 +1,4 @@
-
+package LoveBabbarSheet.String;
 public class LCS_of_three_strings {
 
     int LCSof3(String A, String B, String C, int n1, int n2, int n3) {
