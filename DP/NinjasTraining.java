@@ -51,3 +51,5 @@ public class NinjasTraining {
         System.out.println(topB(n, points)); // Calculate and print the maximum points
     }
 }
+
+

@@ -10,8 +10,6 @@ public class MajorityElement {
         for(int i :a)
         {
                 map.put(i,map.getOrDefault(i,0)+1);
-            
-            
         }
         for(int num :map.keySet())
         {
